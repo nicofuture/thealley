@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Dynamic Logo Animation</title>
+<title>Coming Soon</title>
 <style>
     body, html {
         height: 150%; /* Allow some scrolling */
@@ -69,7 +69,15 @@
             var rotation = Math.min(360, scrollFraction * 720); // Two full rotations
             logoContainer.style.transform = `translate(-50%, -50%) rotate(${rotation}deg) scale(${scale})`;
         });
-    </script>
+    
+window.onscroll = function() {
+    var logo = document.querySelector('.logo-container img'); // Assuming the logo is an img inside logo-container
+    var scrollPercentage = document.documentElement.scrollTop / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+    var scale = 1 - scrollPercentage; // Shrinks as the user scrolls down
+    scale = Math.max(scale, 0.5); // Minimum size of 50%
+    logo.style.transform = 'scale(' + scale + ')';
+};
+</script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     var logo = document.querySelector('.logo-container img'); // Assuming the logo is an img inside logo-container
