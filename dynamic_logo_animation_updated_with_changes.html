@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dynamic Logo Animation</title>
+<style>
+    body, html {
+        height: 150%; /* Allow some scrolling */
+        margin: 0;
+        background-color: #1E55EE;
+        font-family: Arial, sans-serif;
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+    }
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Full viewport height */
+        width: 100vw; /* Full viewport width */
+    }
+    .logo {
+        width: 100%; /* The width is 100% of its parent, .logo-container */
+        height: auto; /* Maintain the aspect ratio of the SVG */
+        vector-effect: non-scaling-stroke; /* Consistent stroke width when scaling */
+        transition: filter 0.3s ease-out; /* Smooth transition for the filter effect */
+    }
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+    }
+    .pulsing {
+        animation: pulse 2s infinite; /* Apply the pulse animation */
+    }
+
+@keyframes twirlAndGrow {
+    0% { transform: scale(1) rotate(0deg); }
+    50% { transform: scale(1.5) rotate(180deg); }
+    100% { transform: scale(1) rotate(360deg); }
+}
+.logo-animate {
+    animation: twirlAndGrow 2s forwards;
+}
+</style>
+</head>
+<body>
+<div class="logo-container pulsing" id="logo-container">
+<img alt="Logo" class="logo" id="logo" src="thealley.svg" style="; width: 70vw;"/>
+</div>
+<script>
+        var logoContainer = document.getElementById('logo-container');
+        var logo = document.getElementById('logo');
+
+        logoContainer.addEventListener('click', function() {
+            // Click to create a burst of color (hue-rotation)
+            logo.style.filter = 'hue-rotate(' + Math.round(Math.random() * 360) + 'deg)';
+        });
+
+        window.addEventListener('scroll', function() {
+            var scrollPos = window.scrollY || window.pageYOffset;
+            var windowHeight = window.innerHeight;
+            var scrollFraction = scrollPos / windowHeight;
+
+            // Scroll to rotate and scale the logo
+            var scale = Math.max(1, 1 + scrollFraction * 2);
+            var rotation = Math.min(360, scrollFraction * 720); // Two full rotations
+            logoContainer.style.transform = `translate(-50%, -50%) rotate(${rotation}deg) scale(${scale})`;
+        });
+    </script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var logo = document.querySelector('.logo-container img'); // Assuming the logo is an img inside logo-container
+    logo.addEventListener('click', function() {
+        logo.classList.add('logo-animate');
+        setTimeout(function() {
+            logo.classList.remove('logo-animate');
+        }, 2000); // Remove the animation class after 2 seconds
+    });
+});
+</script></body>
+</html>
