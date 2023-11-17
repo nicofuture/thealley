@@ -1225,7 +1225,7 @@ a {
   }
 
   .y-logo {
-    width: 50%;
+    width: 40%;
     display: block;
     position: relative;
   }
@@ -1246,6 +1246,8 @@ a {
 
   .arial-shot {
     width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -1496,6 +1498,11 @@ a {
     font-size: 18px;
     line-height: 26px;
   }
+
+  .arial-shot {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -1560,6 +1567,12 @@ a {
 
   .section.fully.auto {
     padding: 40px 0 0;
+  }
+
+  .section.fully.auto.floorplan {
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
 
   .section.flip {
@@ -1724,6 +1737,11 @@ a {
     margin-left: 0;
     margin-right: 0;
     padding: 20px;
+  }
+
+  .arial-shot {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
