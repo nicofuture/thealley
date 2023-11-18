@@ -1569,12 +1569,6 @@ a {
     padding: 40px 0 0;
   }
 
-  .section.fully.auto.floorplan {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-  }
-
   .section.flip {
     min-height: 0;
     padding-top: 40px;
