@@ -360,13 +360,15 @@ a {
 }
 
 .image {
-  width: 100%;
+  width: 50%;
+  height: 100%;
   margin-bottom: -2px;
   margin-left: -1px;
   position: relative;
 }
 
 .image.cover {
+  z-index: 1;
   width: 50%;
   object-fit: cover;
 }
