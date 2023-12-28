@@ -134,6 +134,10 @@ a {
   justify-content: flex-start;
 }
 
+.section.full {
+  padding-top: 0;
+}
+
 .info {
   width: 50%;
   color: var(--black);
@@ -462,6 +466,7 @@ a {
   height: 100vh;
   background-color: #eee;
   justify-content: center;
+  align-items: center;
   display: flex;
   position: relative;
   top: 0%;
