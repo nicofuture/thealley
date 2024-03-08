@@ -177,7 +177,7 @@ a {
   text-transform: none;
   margin-bottom: 20px;
   font-size: 20px;
-  line-height: 29px;
+  line-height: 145%;
 }
 
 .section-paragraph.white {
@@ -1350,11 +1350,11 @@ a {
   .section-title {
     margin-bottom: 10px;
     font-size: 30px;
+    line-height: 120%;
   }
 
   .section-paragraph {
     font-size: 18px;
-    line-height: 26px;
   }
 
   .section-paragraph.white.dla {
@@ -1422,6 +1422,10 @@ a {
 
   ._3d-embed {
     height: 400px;
+  }
+
+  .plain {
+    font-size: 18px;
   }
 
   .footer-title {
