@@ -1,6 +1,6 @@
 :root {
   --white: #f9f8f7;
-  --blue: #2348b5;
+  --blue: #2c47af;
   --black: #191919;
   --grey: #a6abae;
 }
@@ -10,9 +10,9 @@ a {
 }
 
 .hover-line {
+  background-color: #638c3d;
   width: 0%;
   height: 2px;
-  background-color: #638c3d;
   position: absolute;
   top: auto;
   bottom: 0%;
@@ -58,13 +58,13 @@ a {
 
 .menu {
   z-index: 100;
-  width: 100%;
-  height: 70px;
-  max-width: 1500px;
   border-bottom: 1px solid var(--black);
   background-color: var(--white);
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 1500px;
+  height: 70px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 30px;
@@ -83,11 +83,11 @@ a {
 }
 
 .section {
+  justify-content: space-between;
   width: 100vw;
+  max-width: 1500px;
   height: 100vh;
   max-height: 1100px;
-  max-width: 1500px;
-  justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
   padding-top: 50px;
@@ -114,9 +114,9 @@ a {
 }
 
 .section.intro.blue {
-  max-height: none;
   background-color: var(--blue);
   flex-direction: column;
+  max-height: none;
   margin-top: 0;
   padding-top: 70px;
   padding-bottom: 0;
@@ -139,11 +139,11 @@ a {
 }
 
 .info {
-  width: 50%;
   color: var(--black);
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
+  width: 50%;
   margin-top: auto;
   margin-bottom: 50px;
   margin-left: 50px;
@@ -161,9 +161,9 @@ a {
 }
 
 .section-title {
+  color: var(--black);
   width: auto;
   max-width: 520px;
-  color: var(--black);
   margin-top: 0;
   margin-bottom: 20px;
   font-size: 50px;
@@ -172,9 +172,9 @@ a {
 }
 
 .section-paragraph {
-  max-width: 500px;
   color: var(--black);
   text-transform: none;
+  max-width: 500px;
   margin-bottom: 20px;
   font-size: 20px;
   line-height: 145%;
@@ -218,10 +218,10 @@ a {
 
 .mobile-logo {
   z-index: 3;
-  width: 165px;
-  height: auto;
   opacity: .9;
   color: #fff;
+  width: 165px;
+  height: auto;
 }
 
 .mobile-logo:hover {
@@ -229,9 +229,9 @@ a {
 }
 
 .top-line {
+  background-color: var(--black);
   width: 40px;
   height: 2px;
-  background-color: var(--black);
   margin-left: auto;
   margin-right: auto;
   position: absolute;
@@ -253,9 +253,9 @@ a {
 }
 
 .bottom-line {
+  background-color: var(--black);
   width: 40px;
   height: 2px;
-  background-color: var(--black);
   margin-left: auto;
   margin-right: auto;
   position: absolute;
@@ -265,9 +265,9 @@ a {
 }
 
 .middle-line {
+  background-color: var(--black);
   width: 40px;
   height: 2px;
-  background-color: var(--black);
   margin-left: auto;
   margin-right: auto;
   position: absolute;
@@ -333,9 +333,9 @@ a {
 }
 
 .d-1-arrow {
+  background-color: var(--black);
   width: 40px;
   height: 2px;
-  background-color: var(--black);
   margin-left: auto;
   margin-right: auto;
   position: absolute;
@@ -345,9 +345,9 @@ a {
 }
 
 .d-2-arrow {
+  background-color: #162350;
   width: 40px;
   height: 2px;
-  background-color: #162350;
   margin-left: auto;
   margin-right: auto;
   position: absolute;
@@ -373,15 +373,15 @@ a {
 
 .image.cover {
   z-index: 1;
-  width: 50%;
   object-fit: cover;
+  width: 50%;
 }
 
 .image.right-float {
-  width: 50%;
-  height: 100%;
   mix-blend-mode: multiply;
   object-fit: cover;
+  width: 50%;
+  height: 100%;
   margin-left: 0;
   margin-right: 0;
   padding-right: 50px;
@@ -389,18 +389,18 @@ a {
 }
 
 .image.left-float {
+  object-fit: cover;
   width: 50%;
   height: 100%;
-  object-fit: cover;
   padding-left: 50px;
 }
 
 .blue-block {
-  width: 100%;
   flex-direction: row;
   flex: 1;
   justify-content: center;
   align-items: center;
+  width: 100%;
   padding-left: 40px;
   padding-right: 40px;
   display: flex;
@@ -408,17 +408,17 @@ a {
 }
 
 .buidlling-wrapper {
-  width: 100%;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  width: 100%;
   position: relative;
 }
 
 .image-2 {
+  object-fit: cover;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .cta-button {
@@ -462,11 +462,11 @@ a {
 }
 
 ._3d-embed {
-  width: 100%;
-  height: 100vh;
   background-color: #eee;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100vh;
   display: flex;
   position: relative;
   top: 0%;
@@ -480,12 +480,12 @@ a {
 }
 
 .embed-component {
-  width: 100%;
-  height: 100%;
   background-color: rgba(237, 237, 237, 0);
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 
@@ -502,9 +502,9 @@ a {
 }
 
 .vertical-line {
+  background-color: var(--black);
   width: 25px;
   height: 3px;
-  background-color: var(--black);
   margin-left: auto;
   margin-right: auto;
   position: absolute;
@@ -514,9 +514,9 @@ a {
 }
 
 .horizontal-line {
+  background-color: var(--black);
   width: 25px;
   height: 3px;
-  background-color: var(--black);
   margin-left: auto;
   margin-right: auto;
   position: absolute;
@@ -533,20 +533,20 @@ a {
 }
 
 .link-nav.due {
-  width: 100%;
   grid-column-gap: 20px;
   grid-row-gap: 0px;
   grid-template-rows: auto auto;
   grid-template-columns: 1fr;
   grid-auto-columns: 1fr;
+  width: 100%;
   display: grid;
 }
 
 .hyperlink {
-  width: 100%;
   color: var(--black);
   border: 1px rgba(0, 0, 0, .5);
   border-top-style: solid;
+  width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 20px;
@@ -573,15 +573,15 @@ a {
 }
 
 .full-cover-image {
+  object-fit: cover;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .simple-paragraph {
-  max-width: 480px;
   color: var(--black);
   text-transform: none;
+  max-width: 480px;
   margin-bottom: 0;
   font-size: 18px;
   line-height: 27px;
@@ -604,22 +604,22 @@ a {
 }
 
 .contact-info {
-  width: 420px;
-  max-height: 500px;
   flex-direction: column;
   justify-content: space-between;
+  width: 420px;
+  max-height: 500px;
   margin-top: 30%;
   display: flex;
 }
 
 .footer-info {
-  width: 100%;
-  height: 70px;
-  max-width: 1500px;
   background-color: var(--white);
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 1500px;
+  height: 70px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px 50px;
@@ -677,10 +677,10 @@ a {
 }
 
 .half {
-  width: 50%;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  width: 50%;
   margin-left: auto;
   padding-left: 50px;
   display: flex;
@@ -729,12 +729,12 @@ a {
 }
 
 .footer-section {
-  width: 100vw;
-  height: auto;
-  max-height: 1200px;
-  max-width: 1500px;
   background-color: var(--blue);
   justify-content: space-between;
+  width: 100vw;
+  max-width: 1500px;
+  height: auto;
+  max-height: 1200px;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -769,7 +769,6 @@ a {
 }
 
 .download-grid {
-  width: 100%;
   grid-column-gap: 50px;
   grid-row-gap: 0px;
   background-color: var(--white);
@@ -780,6 +779,7 @@ a {
   grid-auto-columns: 1fr;
   justify-content: flex-end;
   align-items: flex-start;
+  width: 100%;
   padding: 25px 50px;
   display: grid;
   position: relative;
@@ -790,19 +790,19 @@ a {
 }
 
 .div-block {
-  width: 100%;
   justify-content: space-between;
+  width: 100%;
   margin-top: auto;
   margin-bottom: auto;
   display: flex;
 }
 
 .disclaimer {
-  width: 100%;
   color: var(--black);
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  width: 100%;
   margin-top: auto;
   display: flex;
   position: relative;
@@ -817,30 +817,11 @@ a {
 }
 
 .arial-shot {
+  object-fit: cover;
   width: 50%;
   height: 100%;
-  object-fit: cover;
   margin-right: auto;
   padding-left: 50px;
-}
-
-.demo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  position: relative;
-  top: 0%;
-  bottom: 0%;
-  left: auto;
-  right: 0%;
-  overflow: hidden;
-}
-
-.demo:focus {
-  border: 1px #000;
 }
 
 @media screen and (min-width: 1440px) {
@@ -945,26 +926,26 @@ a {
   }
 
   .section {
-    height: auto;
-    max-height: none;
-    max-width: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    max-width: none;
+    height: auto;
+    max-height: none;
     padding-top: 60px;
     padding-bottom: 40px;
   }
 
   .section.invert {
-    height: auto;
-    max-height: none;
-    min-height: 0;
     flex-direction: column-reverse;
+    height: auto;
+    min-height: 0;
+    max-height: none;
   }
 
   .section.invert.intro {
-    height: 100svh;
     background-color: var(--white);
+    height: 100svh;
     padding-top: 0;
   }
 
@@ -1038,12 +1019,12 @@ a {
 
   .new-mobile-nav {
     z-index: 10;
-    height: 70px;
     grid-column-gap: 16px;
     grid-row-gap: 16px;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr;
     grid-auto-columns: 1fr;
+    height: 70px;
     padding-left: 40px;
     padding-right: 40px;
     display: flex;
@@ -1079,10 +1060,10 @@ a {
   }
 
   .page-links {
-    width: 100%;
     background-color: var(--blue);
     justify-content: flex-start;
     align-items: flex-start;
+    width: 100%;
     padding: 20px 40px;
     position: absolute;
     top: 0%;
@@ -1097,8 +1078,8 @@ a {
   }
 
   .image.cover {
-    width: 100%;
     flex: 1;
+    width: 100%;
     margin-top: 70px;
     margin-bottom: 20px;
   }
@@ -1110,9 +1091,9 @@ a {
   }
 
   .image.left-float {
+    object-fit: cover;
     width: 100%;
     height: 900px;
-    object-fit: cover;
     margin-left: 0;
     padding-left: 0;
   }
@@ -1208,9 +1189,9 @@ a {
 
   .new-mobile-menu {
     z-index: 10;
+    background-color: var(--blue);
     width: 100%;
     height: 100vh;
-    background-color: var(--blue);
     margin-top: 60px;
     position: fixed;
     top: 0%;
@@ -1228,11 +1209,11 @@ a {
   }
 
   .footer-section {
-    height: auto;
-    min-height: 100svh;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    height: auto;
+    min-height: 100svh;
     padding-bottom: 80px;
     padding-left: 40px;
     padding-right: 40px;
@@ -1275,10 +1256,6 @@ a {
     padding-left: 40px;
     padding-right: 40px;
   }
-
-  .demo {
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1303,15 +1280,15 @@ a {
   }
 
   .section.invert {
-    height: auto;
     flex-direction: row;
     justify-content: space-between;
+    height: auto;
     padding-top: 20px;
   }
 
   .section.invert.intro {
-    height: auto;
     justify-content: space-between;
+    height: auto;
     padding-top: 80px;
     padding-left: 20px;
     padding-right: 20px;
@@ -1341,8 +1318,8 @@ a {
   }
 
   .section.flip {
-    height: auto;
     justify-content: space-between;
+    height: auto;
     padding-top: 20px;
   }
 
@@ -1414,17 +1391,17 @@ a {
   }
 
   .image.cover {
+    flex: 0 auto;
     width: 45%;
     height: 330px;
-    flex: 0 auto;
     margin-top: 0;
     margin-bottom: 0;
   }
 
   .image.right-float {
+    flex: 0 auto;
     width: 45%;
     height: 330px;
-    flex: 0 auto;
     margin-bottom: 0;
   }
 
@@ -1433,9 +1410,9 @@ a {
   }
 
   .image.left-float {
+    flex: 0 auto;
     width: 45%;
     height: 330px;
-    flex: 0 auto;
     margin-bottom: 0;
   }
 
@@ -1477,8 +1454,8 @@ a {
   }
 
   .half {
-    width: 100%;
     flex-direction: row;
+    width: 100%;
     margin-left: 0;
   }
 
@@ -1499,9 +1476,9 @@ a {
   }
 
   .footer-section {
-    min-height: 0;
     flex-direction: row-reverse;
     justify-content: flex-end;
+    min-height: 0;
     margin-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
@@ -1693,8 +1670,8 @@ a {
   }
 
   ._3d-embed {
-    height: 360px;
     flex: 0 auto;
+    height: 360px;
   }
 
   .embed-component {
@@ -1738,8 +1715,8 @@ a {
   }
 
   .intro {
-    height: 100%;
     flex: 1;
+    height: 100%;
   }
 
   .mobile-menu-link {
@@ -1747,8 +1724,8 @@ a {
   }
 
   .y-logo {
-    width: 25%;
     flex: 0 auto;
+    width: 25%;
   }
 
   .download-grid {
@@ -1770,10 +1747,6 @@ a {
   .arial-shot {
     padding-left: 20px;
     padding-right: 20px;
-  }
-
-  .demo {
-    flex: 0 auto;
   }
 }
 
