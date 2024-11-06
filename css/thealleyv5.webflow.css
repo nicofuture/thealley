@@ -1588,6 +1588,10 @@ a {
     position: fixed;
   }
 
+  .page-links {
+    background-color: #1b1b1b;
+  }
+
   .image.cover, .image.right-float, .image.left-float {
     width: 100%;
     height: 480px;
